@@ -1,0 +1,1 @@
+console.log(prompt("What is your name","John"))

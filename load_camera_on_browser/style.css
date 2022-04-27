@@ -1,0 +1,103 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    animation: bg-roll 3s ease 0s infinite forwards normal;
+}
+@keyframes bg-roll{
+    0%{
+        background: linear-gradient(to bottom right, rgb(177, 177, 255) 5%,rgb(255, 185, 185) 100%);
+        animation-duration: 1s;
+        transition: 1s;
+    }
+    25%{
+        background: linear-gradient(to bottom right, rgb(177, 177, 255) 40%,rgb(255, 185, 185) 100%);
+        animation-duration: 1s;
+        transition: 1s;
+    }
+    50%{
+        background: linear-gradient(to bottom right, rgb(177, 177, 255) 60%,rgb(255, 185, 185) 100%);
+        animation-duration: 1s;
+        transition: 1s;
+    }
+    75%{
+        background: linear-gradient(to bottom right, rgb(177, 177, 255) 80%,rgb(255, 185, 185) 100%);
+        animation-duration: 1s;
+        transition: 1s;
+    }
+    100%{
+        background: linear-gradient(to bottom right, rgb(177, 177, 255) 85%,rgb(255, 185, 185) 100%);
+        animation-duration: 1s;
+        transition: 1s; 
+    }
+}
+#div1,#div2{
+    padding-bottom: 10px;
+    width: 100%;
+}
+#video, #canvas{
+    height: 80vh !important;
+    width: 100%;
+}
+#canvas{
+    text-align: center !important;
+    display: none;
+}
+#start-camera, #click-photo{
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    color: #fff;
+}
+#start-camera{
+    background-color: rgb(89, 89, 243);
+}
+#click-photo{
+    background-color: rgb(238, 51, 123);    
+}
+
+.container,
+.container-fluid,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl {
+  width: 100%;
+  padding-right: 7.5px;
+  padding-left: 7.5px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (max-width: 576px) {
+  .container, .container-sm {
+    max-width: calc(100vw -20px);
+  }
+}
+
+@media (min-width: 576px) {
+  .container, .container-sm {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container, .container-sm, .container-md {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container, .container-sm, .container-md, .container-lg {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container, .container-sm, .container-md, .container-lg, .container-xl {
+    max-width: 1140px;
+  }
+}
+.text-center {
+  text-align: center !important;
+}

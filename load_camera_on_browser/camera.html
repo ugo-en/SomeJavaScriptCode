@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Camera test</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="{% static 'Backend/plugins/icheck-bootstrap/icheck-bootstrap.min.css' %}">
+</head>
+<body>
+
+  <div class="container">
+    <div class="text-center">
+      <h1>Browser Camera Demo</h1>
+    </div>
+
+    <div id="div1" class="text-center">
+      <div class="container">
+        <video id="video" autoplay></video>
+      </div>
+
+      <div class="container">
+        <canvas id="canvas"></canvas>
+      </div>
+    </div>
+    
+    <div id="div2" class="text-center">
+      <button id="start-camera">Start Camera</button>
+      <button id="click-photo">Take Photo</button>
+    </div>
+
+  </div>
+
+<script src="attendance.js"></script>
+
+</body>
+</html>
